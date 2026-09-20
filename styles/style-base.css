@@ -173,7 +173,7 @@ header {
     transition: 0.3s;
 }
 
-/* Footer */
+
 .main-footer {
     background: var(--card-bg);
     border-top: 1px solid var(--border-dim);
@@ -247,7 +247,7 @@ header {
     color: #64748b;
 }
 
-/* Адаптация для планшетов и ноутбуков (до 1024px) */
+
 @media (max-width: 1024px) {
     header {
         padding: 0 15px;
@@ -284,7 +284,7 @@ header {
     }
 }
 
-/* Мобильная адаптация для смартфонов (до 816px) */
+
 @media (max-width: 816px) {
     header {
         padding: 0 8px;
@@ -323,7 +323,7 @@ header {
     }
 
     .cart-btn span {
-        display: none; /* Скрываем текст «Корзина», оставляя иконку */
+        display: none;
     }
 
     .cart-icon {

@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Проверяем наличие параметра и подменяем контент
     if (subcatType && titles[subcatType]) {
-        // Устанавливаем заголовок
+
         if (titleElement) {
             titleElement.textContent = titles[subcatType];
         }
 
-        // Показываем только совпавшие карточки, сохраняя сетку Grid
+
         cards.forEach(card => {
             if (card.getAttribute('data-subcat') === subcatType) {
                 card.style.display = ''; // Сбрасывает inline-стиль, разрешая работать CSS Grid
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     } else {
-        // Если параметр не передан или ошибочен, показываем все товары
+
         if (titleElement) {
             titleElement.textContent = 'ВСЕ ТОВАРЫ ПОДКАТЕГОРИИ';
         }

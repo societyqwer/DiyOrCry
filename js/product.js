@@ -135,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
 
-    // Если мы на главной странице (нет параметра id), прерываем выполнение скрипта товара
     if (!productId || !productsData[productId]) {
         return;
     }
@@ -173,7 +172,6 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
-    // Логика переключения вкладок
     const tabButtons = document.querySelectorAll('.tab-btn');
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {

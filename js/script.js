@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Находим все кнопки вкладок
+
     const tabButtons = document.querySelectorAll('.tab-btn');
 
     tabButtons.forEach(button => {

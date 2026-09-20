@@ -26,7 +26,6 @@
     word-break: break-word;
 }
 
-/* Форма обратной связи */
 .form-contact {
     background: var(--card-bg);
     border: 1px solid var(--border-dim);
@@ -101,7 +100,7 @@
 .burger-menu.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
 
 @media (max-width: 768px) {
-    /* Фиксируем высоту шапки для ровного отсчета absolute */
+
     header {
         position: sticky;
         top: 0;
@@ -113,11 +112,10 @@
         display: flex;
     }
 
-    /* Выпадающее меню поверх всего контента */
     .nav-menu {
-        display: none; /* Скрыто по умолчанию */
+        display: none;
         position: absolute;
-        top: 70px; /* Выпадаем ровно из-под шапки */
+        top: 70px;
         left: 0;
         width: 100%;
         background: rgba(8, 10, 22, 0.98);
@@ -127,15 +125,12 @@
         padding: 20px 0;
         gap: 15px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
-        z-index: 1000; /* Перекрывает заголовок и контент */
+        z-index: 1000;
     }
 
-    /* Состояние при клике на бургер */
-    .nav-menu.active {
-        display: flex;
-    }
+
 }
-/* Контакты */
+
 .contact-container {
     max-width: 650px;
     margin: 100px auto 60px; /* 100px сверху компенсируют фиксированную 70px шапку */
@@ -211,10 +206,10 @@
     box-shadow: 0 0 15px var(--neon-blue);
 }
 
-/* Мобильная адаптация страницы контактов */
+
 @media (max-width: 480px) {
     .contact-container {
-        margin: 85px auto 30px; /* Отступ под шапку для смартфонов */
+        margin: 85px auto 30px;
         padding: 0 15px;
     }
 

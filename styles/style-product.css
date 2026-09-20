@@ -1,4 +1,4 @@
-/* Контейнер страницы */
+
 .product-page-container {
     max-width: 1100px;
     margin: 40px auto;
@@ -117,14 +117,9 @@
     margin: 0;
 }
 
-/* Таблица характеристик */
-.char-table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 600px;
-}
 
-/* Стили для таблицы характеристик */
+
+
 .char-table {
     width: 100%;
     max-width: 700px;
@@ -138,7 +133,7 @@
 }
 
 .char-table td:first-child {
-    color: #888; /* Названия параметров сделаем чуть тусклее */
+    color: #888;
     width: 40%;
 }
 
@@ -149,14 +144,14 @@
         padding: 0 12px;
         width: 100%;
         box-sizing: border-box;
-        overflow-x: hidden; /* Перестраховка от вылета элементов */
+        overflow-x: hidden;
     }
 
     .product-main-card {
         flex-direction: column;
         align-items: stretch;
         gap: 20px;
-        padding: 20px 15px; /* Уменьшаем внутренние отступы, чтобы карточка влезала */
+        padding: 20px 15px;
         box-sizing: border-box;
         width: 100%;
     }
@@ -176,7 +171,7 @@
         font-size: 1.3rem;
         text-align: center;
         margin-bottom: 10px;
-        word-wrap: break-word; /* Автоматический перенос длинных наименований */
+        word-wrap: break-word;
     }
 
     .main-price {
@@ -191,7 +186,6 @@
         box-sizing: border-box;
     }
 
-    /* Адаптируем кнопки вкладок под ширину экрана */
     .tabs-header {
         display: flex;
         gap: 8px;

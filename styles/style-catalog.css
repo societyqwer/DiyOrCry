@@ -1,4 +1,4 @@
-/* --- Контейнер и секции каталога --- */
+
 .catalog-vertical {
     background-color: var(--bg-dark);
     padding: 60px 20px;
@@ -13,7 +13,7 @@
     margin: 30px;
     border-radius: 16px;
     padding: 24px;
-    border: 3px solid rgba(0, 255, 255, 0.15); /* Базовая граница для анимации */
+    border: 3px solid rgba(0, 255, 255, 0.15);
     scroll-margin-top: 100px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -41,7 +41,6 @@
     margin: 0;
 }
 
-/* --- Карточки товаров --- */
 .product-list {
     display: flex;
     flex-direction: column;
@@ -106,7 +105,7 @@
     object-fit: contain;
 }
 
-/* --- Глобальные анимации и скролл --- */
+
 html { scroll-behavior: smooth; }
 
 @keyframes slideIn {
@@ -130,7 +129,7 @@ html { scroll-behavior: smooth; }
     }
 }
 
-/* --- Адаптивность --- */
+
 @media (max-width: 600px) {
     .horizontal-card { padding: 15px; }
     .card-img-wrapper { margin-right: 15px; width: 60px; }

@@ -14,7 +14,7 @@
     text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
-/* Сетка контента (товары + чекбокс) */
+
 .cart-content {
     display: grid;
     grid-template-columns: 1fr 350px;
@@ -22,7 +22,7 @@
     align-items: start;
 }
 
-/* Карточка товара в корзине[cite: 14] */
+
 .cart-item {
     background: var(--card-bg);
     border: 1px solid var(--border-dim);
@@ -59,7 +59,7 @@
     font-size: 0.9rem;
 }
 
-/* Управление количеством и ценой[cite: 14] */
+
 .cart-item-actions {
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@
     color: var(--neon-pink);
 }
 
-/* Блок оформления[cite: 14] */
+
 .checkout-box {
     background: var(--card-bg);
     border: 2px solid var(--neon-pink);
@@ -167,7 +167,7 @@
     font-size: 0.9rem;
 }
 
-/* АДАПТИВНОСТЬ[cite: 14] */
+
 @media (max-width: 992px) {
     .cart-content {
         grid-template-columns: 1fr;
