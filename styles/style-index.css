@@ -1,0 +1,231 @@
+a, a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero-секция */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 70px; /* Отступ под фиксированную шапку 70px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/ФотоШапка.png') no-repeat center/cover;
+    box-shadow: 0 2px 0 var(--neon-blue);
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px var(--neon-blue);
+    margin: 0;
+}
+
+.hero-img {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    width: 800px;
+    pointer-events: none;
+}
+
+.section-title {
+    text-align: center;
+    margin: 60px 0 40px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Сетки категорий и товаров */
+.categories-grid,
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 0 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.products-grid {
+    gap: 20px;
+    padding: 40px 60px;
+}
+
+/* Карточки категорий */
+.cat-card {
+    background: var(--card-bg);
+    border: 2px solid var(--neon-pink);
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.cat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 0, 122, 0.3);
+}
+
+.cat-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+/* Карточка товара */
+.product-card {
+    background: var(--card-bg);
+    border: 4px solid var(--border-dim);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    border-color: var(--neon-pink);
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 0, 122, 0.2);
+}
+
+.product-card:hover .product-name {
+    color: var(--neon-blue);
+}
+
+.product-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    color: inherit;
+}
+
+.product-img-wrapper {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-name {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.price {
+    color: var(--neon-blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0 15px;
+}
+
+/* Кнопка каталога */
+.btn-catalog {
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    background: transparent;
+    border: 1px solid var(--neon-blue);
+    border-radius: 15px;
+    color: var(--neon-blue);
+    padding: 15px 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.btn-catalog:hover {
+    background: rgba(0, 255, 255, 0.15);
+    color: var(--text-white);
+    box-shadow: 0 0 15px var(--neon-blue);
+}
+
+/* Адаптив */
+@media (max-width: 992px) {
+    .categories-grid,
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+        gap: 16px;
+    }
+
+    .hero {
+        height: 380px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    /* Товарные карточки на смартфонах выстраиваем в 2 компактные колонки */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 10px;
+        gap: 10px;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-img-wrapper {
+        height: 120px;
+    }
+
+    .product-name {
+        font-size: 0.85rem;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
+
+    .hero {
+        height: 280px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        margin: 30px 0 20px;
+        font-size: 1.4rem;
+    }
+}

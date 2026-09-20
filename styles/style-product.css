@@ -1,0 +1,209 @@
+/* Контейнер страницы */
+.product-page-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.product-main-card {
+    background: var(--card-bg, #161b26);
+    border: 1px solid var(--border-dim, #232a3b);
+    border-radius: 12px;
+    padding: 35px 45px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.product-image-box {
+    flex: 0 0 280px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-info-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info-box h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    line-height: 1.25;
+}
+
+.main-price {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--neon-blue, #00ffff);
+    margin-bottom: 25px;
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+.btn-neon-outline {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-neon-outline:hover {
+    background: rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+/* Вкладки */
+.details-section {
+    margin-top: 30px;
+}
+
+.tabs-header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 8px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    user-select: none;
+}
+
+.tab-btn.active {
+    background: var(--neon-pink, #ff007a);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 0, 122, 0.5);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+#content-desc p {
+    color: #ffffff;
+    font-size: 1.35rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Таблица характеристик */
+.char-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Стили для таблицы характеристик */
+.char-table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+}
+
+.char-table td {
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.1rem;
+}
+
+.char-table td:first-child {
+    color: #888; /* Названия параметров сделаем чуть тусклее */
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .product-page-container {
+        margin-top: 85px;
+        margin-bottom: 30px;
+        padding: 0 12px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden; /* Перестраховка от вылета элементов */
+    }
+
+    .product-main-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 20px 15px; /* Уменьшаем внутренние отступы, чтобы карточка влезала */
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .product-image-box {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 160px;
+    }
+
+    .product-info-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .product-info-box h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 10px;
+        word-wrap: break-word; /* Автоматический перенос длинных наименований */
+    }
+
+    .main-price {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .btn-neon-outline {
+        font-size: 1.1rem;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Адаптируем кнопки вкладок под ширину экрана */
+    .tabs-header {
+        display: flex;
+        gap: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tab-btn {
+        font-size: 1rem;
+        padding: 10px 5px;
+        flex: 1;
+        text-align: center;
+        white-space: nowrap;
+    }
+}

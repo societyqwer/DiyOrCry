@@ -1,0 +1,246 @@
+.contact-container {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+    color: var(--neon-blue);
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+.contact-info p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+/* Форма обратной связи */
+.form-contact {
+    background: var(--card-bg);
+    border: 1px solid var(--border-dim);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.form-contact label {
+    width: 100%;
+}
+
+.form-contact input[type="text"],
+.form-contact textarea {
+    width: 100%;
+    background: #05070a;
+    border: 1px solid var(--border-dim);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--text-white);
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-contact textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-contact input[type="text"]:focus,
+.form-contact textarea:focus {
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.btn-submit {
+    width: 100%;
+    background: transparent;
+    border: 2px solid var(--neon-blue);
+    color: var(--neon-blue);
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 8px;
+}
+
+.btn-submit:hover {
+    background: rgba(0, 255, 255, 0.15);
+    box-shadow: 0 0 15px var(--neon-blue);
+}
+
+.burger-menu span {
+    width: 100%;
+    height: 2px;
+    background-color: var(--neon-blue);
+    border-radius: 2px;
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.burger-menu.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+.burger-menu.active span:nth-child(2) { opacity: 0; }
+.burger-menu.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+@media (max-width: 768px) {
+    /* Фиксируем высоту шапки для ровного отсчета absolute */
+    header {
+        position: sticky;
+        top: 0;
+        height: 70px;
+        box-sizing: border-box;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    /* Выпадающее меню поверх всего контента */
+    .nav-menu {
+        display: none; /* Скрыто по умолчанию */
+        position: absolute;
+        top: 70px; /* Выпадаем ровно из-под шапки */
+        left: 0;
+        width: 100%;
+        background: rgba(8, 10, 22, 0.98);
+        border-bottom: 2px solid var(--neon-blue);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+        z-index: 1000; /* Перекрывает заголовок и контент */
+    }
+
+    /* Состояние при клике на бургер */
+    .nav-menu.active {
+        display: flex;
+    }
+}
+/* Контакты */
+.contact-container {
+    max-width: 650px;
+    margin: 100px auto 60px; /* 100px сверху компенсируют фиксированную 70px шапку */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+    color: var(--neon-blue);
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+.contact-info p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+.form-contact {
+    background: var(--card-bg);
+    border: 1px solid var(--border-dim);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.form-contact label {
+    width: 100%;
+}
+
+.form-contact input[type="text"],
+.form-contact textarea {
+    width: 100%;
+    background: #05070a;
+    border: 1px solid var(--border-dim);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--text-white);
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-contact textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-contact input[type="text"]:focus,
+.form-contact textarea:focus {
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.btn-submit:hover {
+    background: rgba(0, 255, 255, 0.15);
+    box-shadow: 0 0 15px var(--neon-blue);
+}
+
+/* Мобильная адаптация страницы контактов */
+@media (max-width: 480px) {
+    .contact-container {
+        margin: 85px auto 30px; /* Отступ под шапку для смартфонов */
+        padding: 0 15px;
+    }
+
+    .form-contact {
+        padding: 20px 15px;
+    }
+
+    .contact-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-info p {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 480px) {
+    .contact-container {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .form-contact {
+        padding: 20px;
+    }
+
+    .contact-info h1 {
+        font-size: 1.6rem;
+    }
+}

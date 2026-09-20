@@ -1,0 +1,10 @@
+<svg width="700" height="600" viewBox="0 0 700 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2009_61)">
+<path d="M583.333 400V350H641.667V250H583.333V200C583.333 186.25 570.208 175 554.167 175L87.4999 175C71.4582 175 58.3332 186.25 58.3332 200V400C58.3332 413.75 71.4582 425 87.4999 425L554.167 425C570.208 425 583.333 413.75 583.333 400ZM291.667 375V325H233.333V275H291.667V225L350 225V275L408.333 275V325H350V375H291.667Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_2009_61">
+<rect width="600" height="700" fill="white" transform="matrix(0 1 -1 0 700 0)"/>
+</clipPath>
+</defs>
+</svg>

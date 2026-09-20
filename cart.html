@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — DIY OR CRY</title>
+    <link rel="stylesheet" href="styles/style-base.css">
+    <link rel="stylesheet" href="styles/style-cart.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo-container">
+        <img src="images/Лого.svg" alt="DIY OR CRY" class="logo-icon">
+        <span>DIY OR CRY</span>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+        <a href="catalog.html#electronics" class="nav-item">Электронные<br>Компоненты</a>
+        <a href="catalog.html#cases" class="nav-item">Корпусные<br>изделия</a>
+        <a href="catalog.html#power" class="nav-item">Блоки и элементы<br>питания</a>
+    </nav>
+
+    <div class="header-right">
+        <a href="cart.html" class="cart-btn">
+            <img src="images/Лого корзины.svg" alt="Корзина" class="cart-icon">
+            <span>Корзина</span>
+        </a>
+    </div>
+</header>
+
+    <main class="cart-wrapper">
+        <h1 class="cart-title">Ваша корзина</h1>
+
+        <div class="cart-content">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img src="images/Микроконтроллер APM32F103C8T6.png" alt="Товар">
+                    </div>
+                    <div class="cart-item-details">
+                        <h3>Микроконтроллер APM32F103C8T6</h3>
+                        <p class="price-unit">350 ₽ / шт.</p>
+                    </div>
+                    <div class="cart-item-actions">
+                        <div class="quantity-control">
+                            <button class="qty-btn">-</button>
+                            <span class="qty-num">1</span>
+                            <button class="qty-btn">+</button>
+                        </div>
+                        <span class="item-total">350 ₽</span>
+                        <button class="remove-item-btn">×</button>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="cart-checkout">
+                <div class="checkout-box">
+                    <h2>Итого</h2>
+                    <div class="summary-line">
+                        <span>Товары (1)</span>
+                        <span>350 ₽</span>
+                    </div>
+                    <div class="summary-line total">
+                        <span>К оплате</span>
+                        <span class="total-amount">350 ₽</span>
+                    </div>
+                    <button class="order-btn">Оформить заказ</button>
+                    <a href="catalog.html" class="back-to-shop">Вернуться к покупкам</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
