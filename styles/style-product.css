@@ -72,7 +72,6 @@
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
 
-/* Вкладки */
 .details-section {
     margin-top: 30px;
 }
@@ -116,9 +115,6 @@
     line-height: 1.6;
     margin: 0;
 }
-
-
-
 
 .char-table {
     width: 100%;
