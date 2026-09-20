@@ -3,12 +3,11 @@ a, a:link, a:visited {
     color: white;
 }
 
-/* Hero-секция */
 .hero {
     position: relative;
     width: 100%;
     height: 500px;
-    margin-top: 70px; /* Отступ под фиксированную шапку 70px */
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +43,6 @@ a, a:link, a:visited {
     letter-spacing: 2px;
 }
 
-/* Сетки категорий и товаров */
 .categories-grid,
 .products-grid {
     display: grid;
@@ -61,7 +59,6 @@ a, a:link, a:visited {
     padding: 40px 60px;
 }
 
-/* Карточки категорий */
 .cat-card {
     background: var(--card-bg);
     border: 2px solid var(--neon-pink);
@@ -85,7 +82,6 @@ a, a:link, a:visited {
     object-fit: contain;
 }
 
-/* Карточка товара */
 .product-card {
     background: var(--card-bg);
     border: 4px solid var(--border-dim);
@@ -148,7 +144,6 @@ a, a:link, a:visited {
     margin: 10px 0 15px;
 }
 
-/* Кнопка каталога */
 .btn-catalog {
     display: block;
     width: fit-content;
@@ -169,7 +164,6 @@ a, a:link, a:visited {
     box-shadow: 0 0 15px var(--neon-blue);
 }
 
-/* Адаптив */
 @media (max-width: 992px) {
     .categories-grid,
     .products-grid {
@@ -193,7 +187,6 @@ a, a:link, a:visited {
         padding: 0 15px;
     }
 
-    /* Товарные карточки на смартфонах выстраиваем в 2 компактные колонки */
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
         padding: 0 10px;
