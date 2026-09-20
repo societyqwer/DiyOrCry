@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Словарь подкатегорий и их заголовков
+
     const titles = {
         'mcu': 'МИКРОКОНТРОЛЛЕРЫ',
         'resistors': 'РЕЗИСТОРЫ',
@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
         'lbp': 'ЛАБОРАТОРНЫЕ БЛОКИ'
     };
 
-    // 2. Считываем параметр ?type= из URL страницы
+
     const urlParams = new URLSearchParams(window.location.search);
     const subcatType = urlParams.get('type');
 
     const titleElement = document.getElementById('subcategory-title');
     const cards = document.querySelectorAll('.product-card');
 
-    // 3. Проверяем наличие параметра и подменяем контент
+
     if (subcatType && titles[subcatType]) {
 
         if (titleElement) {
