@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cards.forEach(card => {
             if (card.getAttribute('data-subcat') === subcatType) {
-                card.style.display = ''; // Сбрасывает inline-стиль, разрешая работать CSS Grid
+                card.style.display = '';
             } else {
-                card.style.display = 'none'; // Скрывает ненужные
+                card.style.display = 'none';
             }
         });
     } else {
