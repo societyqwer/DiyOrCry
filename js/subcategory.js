@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const titles = {
         'mcu': 'МИКРОКОНТРОЛЛЕРЫ',
-        'resistors': 'РЕЗИСТОРЫ',
+        'resistors': 'РЕЗИСТОРЫ И КОНДЕНСАТОРЫ',
         'leds': 'СВЕТОДИОДЫ',
         'radiators': 'РАДИАТОРЫ',
         'fans': 'ВЕНТИЛЯТОРЫ',
         'cases': 'КОРПУСА',
         'batteries': 'АККУМУЛЯТОРЫ',
         'psu': 'БЛОКИ ПИТАНИЯ',
-        'lbp': 'ЛАБОРАТОРНЫЕ БЛОКИ'
+        'lbp': 'ЛАБОРАТОРНЫЕ БЛОКИ',
     };
 
 
